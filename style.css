@@ -1,12 +1,17 @@
 body{
-  margin:0px;
+  margin:20px;
   padding:0px;
 }
 
 .container{
-  margin:0px;
+  margin:20px;
   padding:0px;
-  widht:960px;
+  widht:1000px;
+}
+
+.content-area{
+  padding:0px;
+  margin:0px;
 }
 
 .header{
