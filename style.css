@@ -1,3 +1,17 @@
 body{
   margin:0px;
+  padding:0px;
 }
+
+.container{
+  margin:0px;
+  padding:0px;
+  widht:960px;
+}
+
+.header{
+  margin:10px;
+  border-top:1px soild red;
+  padding:0px;
+}
+
