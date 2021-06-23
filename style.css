@@ -1,17 +1,19 @@
 body{
-  margin:20px;
+  margin:0px;
   padding:0px;
+  background:#f2f2f2;
 }
 
 .container{
-  margin:20px;
+  margin:0px;
   padding:0px;
-  widht:1000px;
+  widht:960px;
 }
 
 .content-area{
-  padding:0px;
+  padding:10px 0;
   margin:0px;
+  
 }
 
 .header{
