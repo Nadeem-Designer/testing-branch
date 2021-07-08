@@ -1,0 +1,27 @@
+body{
+  margin:0px;
+  padding:0px;
+  background:#f2f2f2;
+}
+
+.container{
+  margin:0px;
+  padding:0px;
+  widht:960px;
+}
+
+.content-area{
+  padding:10px 0;
+  margin:0px;
+  
+}
+
+.header{
+  margin:10px;
+  border-top:1px soild red;
+  padding:0px;
+}
+.footer{
+  margin:0px;
+  padding:0px;
+}
