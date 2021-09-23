@@ -1,0 +1,23 @@
+async function getWebviewConfig(mode, env, entry) {
+	const basePath = path.join(__dirname, 'webviews');
+
+	/**
+	 * @type WebpackConfig['plugins'] | any
+	 */
+	const plugins = [
+		new ForkTsCheckerPlugin({
+			async: false,
+			eslint: {
+				enabled: true,
+				files: path.join(basePath, '**', '*.ts'),
+				options: { cache: true, configFile: path.join(__dirname, '.eslintrc.webviews.json') },
+			},
+			formatter: 'basic',
+			typescript: {
+				configFile: path.join(__dirname, 'tsconfig.webviews.json'),
+			},
+		}),
+	];
+
+	return {
+		name: 'webviews',
