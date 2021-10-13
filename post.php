@@ -11,12 +11,12 @@ if (!isset($_POST)) {
 } elseif (true) {
     $result = ['result' => 'success', 'message' => 'successfully sent'];
 }
-returnBack($result);
+returnBackresult($result);
 
 
 
 
-function returnBack($result) {
+function returnBackresult($result) {
     if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
         header('Content-type:application/json;charset=utf-8');
         echo json_encode($result);
